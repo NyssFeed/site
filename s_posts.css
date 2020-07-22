@@ -1,0 +1,150 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif; 
+}
+
+body, html {
+  height: 100%;
+}
+
+input, label {
+  display: none;
+  float: right;
+}
+
+/* FIRST SECTION */
+
+.smenu {
+  width: 100%;
+  background-color: black;
+  height: 40px;
+}
+
+.smenu h2 {
+  float: left;
+  position: relative;
+  top: 5px;
+  left: 30px;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 2px;
+  font-weight: 200;
+  color: white;
+}
+
+nav {
+  width: 100%;
+  float: right;
+  position: absolute;
+  z-index: 1
+}
+
+.submenu {
+  float: right;
+  list-style-type: none;
+  background-color: #E91E63;
+  display: table;
+}
+
+.submenu li {
+  display: table-cell;
+}
+
+.submenu li a {
+  text-decoration: none;
+  text-align: center;
+  padding: 10.5px 15px;
+  display: block;
+  color: white;
+  letter-spacing: 4px;
+}
+
+.submenu li a:hover {
+  background-color: white;
+  color: black;
+  transition: 0.8s ease;
+}
+
+.submenu li.active a {
+  background-color: #fff;
+  color: #000;
+}
+
+/* < SECOND SECTION > */
+
+
+
+
+
+
+
+
+
+
+
+
+/*   <--  MOBILE RESPONSIVE  -->   */
+
+@media screen and (max-width:720px) {
+
+/* FIRST SECTION */
+
+.smenu {
+  height: 40px;
+}
+
+.smenu h2 {
+  font-size: 22px;
+  position: relative;
+  top: 6px;
+}
+
+nav {
+  width: 130px;
+  text-align: center;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.submenu {
+  display: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+label {
+  display: initial;
+  float: right;
+}
+
+.bar {
+  background-color: #FF0066;
+  padding: 5px 10px;
+}
+
+.bar div {
+  width: 30px;
+  height: 2px;
+  background-color: white;
+  margin: 6px 0;
+}
+
+input:checked~ul.submenu {
+  display: block;
+  overflow: hidden;
+}
+
+.submenu li {
+  display: block;
+}
+
+.submenu li a {
+  display: block;
+  font-size: 16px;
+  margin: 0;
+  display: block;
+}
+
+/* < SECOND SECTION > */
