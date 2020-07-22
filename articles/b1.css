@@ -190,19 +190,6 @@ input:checked~ul.submenu {
 }
 
 .a a {
-  color: #214E34;
-  font-size: 13px;
-  font-weight: 900;
-  padding: 2px;
-  text-align: left;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 2px;
-  border: 1px solid black; 
-  line-height: 40px;
-}
-
-.a img {
   float: right;
   margin-left: 50px;
   border: none;
