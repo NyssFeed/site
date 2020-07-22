@@ -159,11 +159,10 @@ nav {
   line-height: 40px;
 }
 
-/*.article img {
+.article img {
   float: right;
   margin-left: 50px;
-  border: none;
-}*/
+}
 
 /* < FORTH SECTION > */
 
@@ -295,11 +294,17 @@ input:checked~ul.submenu {
 .article p {
   padding: 3px 0;
   font-size: 15px;
+  height: 150px;
+  overflow: hidden;
 }
 
 .article a {
   letter-spacing: 0.8px;
   font-size: 8px;
+}
+
+.article img {
+  display: none;
 }
 
 /* < FORTH SECTION > */
