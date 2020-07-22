@@ -189,8 +189,7 @@ input:checked~ul.submenu {
   padding: 10px 0;
 }
 
-.a a {
+.a img {
   float: right;
   margin-left: 50px;
-  border: none;
 }
