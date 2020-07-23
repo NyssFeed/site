@@ -8,128 +8,82 @@ body, html {
   height: 100%;
 }
 
-input, label {
+input, label, .info, .cat {
   display: none;
-  float: right;
 }
 
-/* <---------------< MENU BAR - STARTS >---------------> */
+/* <---------- MENU x BAR ----------> */
 
 .smenu {
   width: 100%;
   background-color: black;
   height: 40px;
 }
-
 .smenu h2 {
   float: left;
   position: relative;
-  top: 5.5px;
-  left: 20px;
-  letter-spacing: 4px;
-  font-weight: normal;
-  color: white;
+  top: 5px;
+  left: 30px;
 }
-
+.smenu h2 a {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 2px;
+  font-weight: 200;
+  color: white;
+  text-decoration: none;
+}
 nav {
-  width: 100%;
-  float: right;
   position: absolute;
+  right: 0px;
   z-index: 1
 }
-
-.submenu {
+.submenu, .cat {
   float: right;
   list-style-type: none;
   background-color: #E91E63;
-  display: table;
 }
-
-.submenu li {
-  display: table-cell;
-}
-
-.submenu li a {
+.submenu li a, .cat li a {
   text-decoration: none;
   text-align: center;
-  padding: 10.5px 15px;
+  padding: 11px 15px;
   display: block;
   color: white;
   letter-spacing: 4px;
 }
-
+.submenu li, .cat li {
+  display: block;
+  float: left;
+}
+.submenu li ul li {
+  float: none;
+}
+.submenu li ul {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  border-width: 0 1px 1px 1px;
+  border-color: black;
+  border-style: solid;
+  width: 280px;
+}
+.submenu li:hover ul {
+  display: block;
+  background-color: #F5207D;
+  color: white;
+}
 .submenu li a:hover {
   background-color: white;
   color: black;
   transition: 0.8s ease;
 }
-
-/*   <--  MOBILE RESPONSIVE  -->   */
-
-@media screen and (max-width:720px) {
-
-.smenu {
-  height: 40px;
+.submenu li.active a {
+  background-color: #fff;
+  color: #000;
 }
 
-.smenu h2 {
-  font-size: 22px;
-  font-weight: normal;
-  position: relative;
-  top: 8px;
-}
+/* <--------------- o ---------------> */
 
-nav {
-  width: 130px;
-  text-align: center;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-}
-
-.submenu {
-  display: none;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-label {
-  display: initial;
-  float: right;
-}
-
-.bar {
-  background-color: #FF0066;
-  padding: 5px 10px;
-}
-
-.bar div {
-  width: 30px;
-  height: 2px;
-  background-color: white;
-  margin: 6px 0;
-}
-
-input:checked~ul.submenu {
-  display: block;
-  overflow: hidden;
-}
-
-.submenu li {
-  display: block;
-}
-
-.submenu li a {
-  display: block;
-  font-size: 16px;
-  margin: 0;
-  display: block;
-}
-/* <---------------< MENU BAR - ENDS >---------------> */
-
-
-}
+/* < SECOND SECTION > */
 
 .a1 {
   height: auto;
@@ -193,3 +147,75 @@ input:checked~ul.submenu {
   float: right;
   margin-left: 50px;
 }
+
+
+
+/* <------  MOBILE RESPONSIVE  ------> */
+
+@media screen and (max-width:720px) {
+
+/* <---------- MENU x BAR ----------> */
+
+.smenu h2 {
+  font-size: 22px;
+  position: relative;
+  top: 6px;
+}
+nav {
+  text-align: center;
+}
+.submenu {
+  display: none;
+}
+.cat {
+  display: none;
+  width: 180px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 40px;
+  left: 50px;
+}
+label {
+  display: initial;
+  float: right;
+}
+.bar {
+  background-color: #FF0066;
+  padding: 5px 10px;
+}
+.bar div {
+  width: 30px;
+  height: 2px;
+  background-color: white;
+  margin: 6px 0;
+}
+#check01:checked~.cat {
+  display: block;
+  background-color: #F5207D;
+  color: white; 
+}
+.cat li {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.cat li a:hover {
+  background-color: white;
+  color: black;
+}
+.cat li.active a {
+  background-color: white;
+  color: black;
+}
+
+/* <--------------- o ---------------> */
+
+/* < SECOND SECTION > */
+
+
+
+
+}
+
+
