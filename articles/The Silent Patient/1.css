@@ -1,0 +1,323 @@
+*{
+  	margin: 0;
+  	padding: 0;
+  	font-family: 'Montserrat', sans-serif; 
+}
+
+body, html {
+  	height: 100%;
+}
+
+.mobile, input, label, .m {
+  	display: none;
+}
+
+/* <---------- MENU x BAR ----------> */
+
+.smenu {
+    width: 100%;
+  	background-color: black;
+  	height: 40px;
+}
+
+.smenu h2 {
+  	float: left;
+  	position: relative;
+  	top: 5px;
+  	left: 30px;
+}
+.smenu h2 a {
+  	font-family: 'Raleway', sans-serif;
+  	letter-spacing: 2px;
+  	font-weight: 200;
+  	color: white;
+  	text-decoration: none;
+}
+
+.submenu, .cat {
+  	position: relative;
+  	z-index: 1;
+  	float: right;
+  	list-style-type: none;
+  	background-color: #E91E63;
+}
+
+.submenu li, .cat li {
+  	display: block;
+  	float: left;
+}
+
+.submenu li a {
+  	text-decoration: none;
+  	text-align: center;
+  	padding: 10.5px 15px;
+  	display: block;
+  	color: white;
+  	letter-spacing: 4px;
+}
+
+.submenu li ul {
+  	display: none;
+  	position: absolute;
+  	right: 0;
+  	z-index: 1;
+  	border-width: 0 1px 1px 1px;
+  	border-color: black;
+  	border-style: solid;
+  	width: 600px;
+  	height: 82px;
+}
+
+.submenu li ul li {
+  	width: 200px;
+}
+
+.submenu li:hover ul {
+  	display: block;
+  	background-color: #F5207D;
+  	color: white;
+}
+
+.submenu li a:hover {
+  	background-color: white;
+  	color: black;
+  	transition: 0.5s ease;
+}
+
+.submenu li.active a {
+  	background-color: #000;
+  	color: #fff;
+}
+
+/* <---------- E-N-D ----------> */
+
+
+/* ARTICLE SECTION */
+
+.article {
+    height: auto;
+    width: 85%;
+    position: relative;
+    margin: 50px auto;
+    background-color: white;
+    color: black;
+    border-bottom: 1px solid #E4BB97;
+}
+
+.article h1 {
+    color: #41292C;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: left;
+    position: relative;
+    top: 40px;
+    margin: 50px 20px;
+}
+
+.article span {
+    float: right;
+}
+
+.article h3 {
+    color: #E4BB97;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 10px 0;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.article p {
+    color: black;
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 0;
+}
+
+.article p::first-letter {
+    font-size: 40px;
+    font-family: serif;
+    font-weight: lighter;
+}
+
+.article img {
+    float: right;
+    margin-left: 50px;
+}
+
+.article .au {
+  float: left;
+  margin-right: 50px;
+  margin-left: 0;
+}
+
+/* CONTACT SECTION */
+
+.sblack {
+  	height: 200px;
+  	background-color: black;
+  	color: white;
+  	text-align: center;
+}
+
+.sblack h4 {
+  	padding-top: 50px;
+  	font-size: 40px;
+}
+
+.sblack p {
+  	padding-top: 10px;
+  	font-size: 18px;
+}
+
+
+
+
+/* < MOBILE RESPONSIVE > */
+
+@media screen and (max-width:720px) {
+
+.mobile, label, .m {
+  	display: initial;
+}
+
+/* <---------- M-E-N-U ----------> */
+
+.smenu h2 {
+  	width: 90%;  
+  	text-align: center;	
+  	background-color: #000;
+  	font-size: 22px;
+}
+
+.smenu h2 a {
+  	color: #fff;
+  	padding: 3px;
+}
+
+input, .submenu, .cat, .d {
+  	display: none;
+}
+
+/* MENU BAR */
+
+.mb {
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+}
+
+.bar {
+  	background-color: #000;
+  	margin: 3px 10px;
+  	padding: 1px 5px;
+}
+
+.bar div {
+  	width: 25px;
+  	height: 2px;
+  	background-color: #fff;
+  	margin: 6px 0;
+}
+
+.cat {
+    width: 100%;
+}
+
+.cat li {
+    width: 50%;
+}
+
+.cat li a {
+  	text-decoration: none;
+  	text-align: center;
+  	padding: 11px;
+  	display: block;
+  	color: white;
+  	letter-spacing: 2px;
+}
+
+#check01:checked~.cat {
+  	display: block;
+  	position: absolute;
+  	top: 40px;
+  	background-color: #F5207D;
+  	color: white;
+}
+
+.cat li a:hover {
+  	background-color: white;
+  	color: black;
+}
+
+.cat li.active a {
+  	background-color: white;
+  	color: black;
+}
+
+/* <---------- E-N-D ----------> */
+
+
+/* ARTICLE SECTION */
+
+.article {
+    margin: 20px auto;
+    width: 90%;
+}
+
+.article h1 {
+    font-size: 18px;
+    margin: 20px 10px; 
+}
+
+.article span {
+    margin: 20px;
+    font-size: 15px;
+}
+
+.article h3 {
+    margin-top: 150px;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.article p {
+    line-height: 30px;
+    font-size: 15px;
+    padding: 10px 0;
+}
+
+.article p::first-letter {
+    font-size: 30px;
+}
+
+.article img, .article .au {
+    width: 80%;
+    height: auto;
+    float: initial;
+    margin: 40px;
+}
+
+
+
+/* CONTACT SECTION */
+
+.sblack {
+  	height: 120PX;
+}
+
+.sblack h4 {
+  	padding-top: 35px;
+  	font-size: 25px;
+}
+
+.sblack p {
+  	padding: 10px;
+  	font-size: 15px;
+}
+
+}
