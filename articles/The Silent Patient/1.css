@@ -57,19 +57,22 @@ body, html {
 }
 
 .submenu li ul {
-  	display: none;
-  	position: absolute;
-  	right: 0;
-  	z-index: 1;
-  	border-width: 0 1px 1px 1px;
-  	border-color: black;
-  	border-style: solid;
-  	width: 600px;
-  	height: 82px;
+    display: none;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    border-width: 0 1px 1px 1px;
+    border-color: black;
+    border-style: solid;
+    width: 600px;
 }
 
 .submenu li ul li {
-  	width: 200px;
+    width: 200px;
+}
+
+.submenu li ul a {
+    padding: 20px 0;
 }
 
 .submenu li:hover ul {
@@ -96,7 +99,8 @@ body, html {
 
 .article {
     height: auto;
-    width: 85%;
+    min-height: 800px;
+    width: 90%;
     position: relative;
     margin: 50px auto;
     background-color: white;
@@ -108,14 +112,12 @@ body, html {
     color: #41292C;
     font-size: 30px;
     font-weight: 500;
-    text-align: left;
-    position: relative;
-    top: 40px;
-    margin: 50px 20px;
+    margin-top: 50px;
 }
 
 .article span {
     float: right;
+    margin: 10px 50px;
 }
 
 .article h3 {
@@ -149,26 +151,26 @@ body, html {
 }
 
 .article .au {
-  float: left;
-  margin-right: 50px;
-  margin-left: 0;
+    float: left;
+    margin-right: 50px;
+    margin-left: 0;
 }
 
 /* CONTACT SECTION */
 
-.sblack {
+.contact {
   	height: 200px;
   	background-color: black;
   	color: white;
   	text-align: center;
 }
 
-.sblack h4 {
+.contact h4 {
   	padding-top: 50px;
   	font-size: 40px;
 }
 
-.sblack p {
+.contact p {
   	padding-top: 10px;
   	font-size: 18px;
 }
@@ -180,22 +182,8 @@ body, html {
 
 @media screen and (max-width:720px) {
 
-.mobile, label, .m {
+label, .mobile, .m {
   	display: initial;
-}
-
-/* <---------- M-E-N-U ----------> */
-
-.smenu h2 {
-  	width: 90%;  
-  	text-align: center;	
-  	background-color: #000;
-  	font-size: 22px;
-}
-
-.smenu h2 a {
-  	color: #fff;
-  	padding: 3px;
 }
 
 input, .submenu, .cat, .d {
@@ -204,6 +192,17 @@ input, .submenu, .cat, .d {
 
 /* MENU BAR */
 
+.smenu h2 { 
+	width: 100%;
+	left: 0;
+  	text-align: center;
+  	font-size: 22px;
+}
+
+.smenu h2 a {
+  	padding: 3px;
+}
+
 .mb {
   	position: absolute;
   	top: 0;
@@ -211,7 +210,7 @@ input, .submenu, .cat, .d {
 }
 
 .bar {
-  	background-color: #000;
+  	background-color: black;
   	margin: 3px 10px;
   	padding: 1px 5px;
 }
@@ -219,7 +218,7 @@ input, .submenu, .cat, .d {
 .bar div {
   	width: 25px;
   	height: 2px;
-  	background-color: #fff;
+  	background-color: #FC4F7E;
   	margin: 6px 0;
 }
 
@@ -234,7 +233,7 @@ input, .submenu, .cat, .d {
 .cat li a {
   	text-decoration: none;
   	text-align: center;
-  	padding: 11px;
+  	padding: 20px 11px;
   	display: block;
   	color: white;
   	letter-spacing: 2px;
@@ -260,27 +259,26 @@ input, .submenu, .cat, .d {
 
 /* <---------- E-N-D ----------> */
 
-
 /* ARTICLE SECTION */
 
 .article {
     margin: 20px auto;
-    width: 90%;
 }
 
 .article h1 {
-    font-size: 18px;
-    margin: 20px 10px; 
+    font-size: 16px;
+    margin-top: 40px; 
 }
 
 .article span {
-    margin: 20px;
-    font-size: 15px;
+    margin-right: 20px;
+    font-size: 14px;
 }
 
 .article h3 {
-    margin-top: 150px;
-    font-size: 30px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    font-size: 27px;
     width: 100%;
     text-align: center;
 }
@@ -302,21 +300,19 @@ input, .submenu, .cat, .d {
     margin: 40px;
 }
 
-
-
 /* CONTACT SECTION */
 
-.sblack {
-  	height: 120PX;
+.contact {
+  	height: 120px;
 }
 
-.sblack h4 {
-  	padding-top: 35px;
-  	font-size: 25px;
+.contact h4 {
+  	padding-top: 25px;
+  	font-size: 22px;
 }
 
-.sblack p {
-  	padding: 10px;
+.contact p {
+  	padding-top: 8px;
   	font-size: 15px;
 }
 
