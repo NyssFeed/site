@@ -1,59 +1,59 @@
 *{
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif; 
+  	margin: 0;
+  	padding: 0;
+  	font-family: 'Montserrat', sans-serif; 
 }
 
 body, html {
-    height: 100%;
+  	height: 100%;
 }
 
 .mobile, input, label, .m {
-    display: none;
+  	display: none;
 }
 
 /* <---------- MENU x BAR ----------> */
 
 .smenu {
     width: 100%;
-    background-color: black;
-    height: 40px;
+  	background-color: black;
+  	height: 40px;
 }
 
 .smenu h2 {
-    float: left;
-    position: relative;
-    top: 5px;
-    left: 30px;
+  	float: left;
+  	position: relative;
+  	top: 5px;
+  	left: 30px;
 }
 .smenu h2 a {
-    font-family: 'Raleway', sans-serif;
-    letter-spacing: 2px;
-    font-weight: 200;
-    color: white;
-    text-decoration: none;
+  	font-family: 'Raleway', sans-serif;
+  	letter-spacing: 2px;
+  	font-weight: 200;
+  	color: white;
+  	text-decoration: none;
 }
 
 .submenu, .cat {
-    position: relative;
-    z-index: 1;
-    float: right;
-    list-style-type: none;
-    background-color: #E91E63;
+  	position: relative;
+  	z-index: 1;
+  	float: right;
+  	list-style-type: none;
+  	background-color: #E91E63;
 }
 
 .submenu li, .cat li {
-    display: block;
-    float: left;
+  	display: block;
+  	float: left;
 }
 
 .submenu li a {
-    text-decoration: none;
-    text-align: center;
-    padding: 10.5px 15px;
-    display: block;
-    color: white;
-    letter-spacing: 4px;
+  	text-decoration: none;
+  	text-align: center;
+  	padding: 10.5px 15px;
+  	display: block;
+  	color: white;
+  	letter-spacing: 4px;
 }
 
 .submenu li ul {
@@ -76,20 +76,20 @@ body, html {
 }
 
 .submenu li:hover ul {
-    display: block;
-    background-color: #F5207D;
-    color: white;
+  	display: block;
+  	background-color: #F5207D;
+  	color: white;
 }
 
 .submenu li a:hover {
-    background-color: white;
-    color: black;
-    transition: 0.5s ease;
+  	background-color: white;
+  	color: black;
+  	transition: 0.5s ease;
 }
 
 .submenu li.active a {
-    background-color: #000;
-    color: #fff;
+  	background-color: #000;
+  	color: #fff;
 }
 
 /* <---------- E-N-D ----------> */
@@ -159,20 +159,20 @@ body, html {
 /* CONTACT SECTION */
 
 .contact {
-    height: 200px;
-    background-color: black;
-    color: white;
-    text-align: center;
+  	height: 200px;
+  	background-color: black;
+  	color: white;
+  	text-align: center;
 }
 
 .contact h4 {
-    padding-top: 50px;
-    font-size: 40px;
+  	padding-top: 50px;
+  	font-size: 40px;
 }
 
 .contact p {
-    padding-top: 10px;
-    font-size: 18px;
+  	padding-top: 10px;
+  	font-size: 18px;
 }
 
 
@@ -183,43 +183,43 @@ body, html {
 @media screen and (max-width:720px) {
 
 label, .mobile, .m {
-    display: initial;
+  	display: initial;
 }
 
 input, .submenu, .cat, .d {
-    display: none;
+  	display: none;
 }
 
 /* MENU BAR */
 
 .smenu h2 { 
-    width: 100%;
-    left: 0;
-    text-align: center;
-    font-size: 22px;
+	width: 100%;
+	left: 0;
+  	text-align: center;
+  	font-size: 22px;
 }
 
 .smenu h2 a {
-    padding: 3px;
+  	padding: 3px;
 }
 
 .mb {
-    position: absolute;
-    top: 0;
-    left: 0;
+  	position: absolute;
+  	top: 0;
+  	left: 0;
 }
 
 .bar {
-    background-color: black;
-    margin: 3px 10px;
-    padding: 1px 5px;
+  	background-color: black;
+  	margin: 3px 10px;
+  	padding: 1px 5px;
 }
 
 .bar div {
-    width: 25px;
-    height: 2px;
-    background-color: #FC4F7E;
-    margin: 6px 0;
+  	width: 25px;
+  	height: 2px;
+  	background-color: #FC4F7E;
+  	margin: 6px 0;
 }
 
 .cat {
@@ -231,30 +231,30 @@ input, .submenu, .cat, .d {
 }
 
 .cat li a {
-    text-decoration: none;
-    text-align: center;
-    padding: 20px 11px;
-    display: block;
-    color: white;
-    letter-spacing: 2px;
+  	text-decoration: none;
+  	text-align: center;
+  	padding: 20px 11px;
+  	display: block;
+  	color: white;
+  	letter-spacing: 2px;
 }
 
 #check01:checked~.cat {
-    display: block;
-    position: absolute;
-    top: 40px;
-    background-color: #F5207D;
-    color: white;
+  	display: block;
+  	position: absolute;
+  	top: 40px;
+  	background-color: #F5207D;
+  	color: white;
 }
 
 .cat li a:hover {
-    background-color: white;
-    color: black;
+  	background-color: white;
+  	color: black;
 }
 
 .cat li.active a {
-    background-color: white;
-    color: black;
+  	background-color: white;
+  	color: black;
 }
 
 /* <---------- E-N-D ----------> */
@@ -303,17 +303,17 @@ input, .submenu, .cat, .d {
 /* CONTACT SECTION */
 
 .contact {
-    height: 120px;
+  	height: 120px;
 }
 
 .contact h4 {
-    padding-top: 25px;
-    font-size: 22px;
+  	padding-top: 25px;
+  	font-size: 22px;
 }
 
 .contact p {
-    padding-top: 8px;
-    font-size: 15px;
+  	padding-top: 8px;
+  	font-size: 15px;
 }
 
 }
