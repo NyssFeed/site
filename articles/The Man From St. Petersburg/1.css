@@ -12,6 +12,11 @@ body, html {
     display: none;
 }
 
+.sections {
+    float: left;
+    width: 100%;
+}
+
 /* <---------- MENU x BAR ----------> */
 
 .smenu {
@@ -305,11 +310,21 @@ input, .submenu, .cat, .d {
     font-size: 30px;
 }
 
-.article img,.article .au {
+.article img {
     width: 80%;
-    height: auto;
     float: initial;
-    margin: 40px;
+    margin: 0;
+}
+
+.article .au {
+    width: 95%;
+    float: initial;
+    margin: 0;
+}
+
+.im {
+    width: 100%;
+    text-align: center;
 }
 
 /* CONTACT SECTION */
